@@ -1,11 +1,6 @@
 @echo off
 set currentPath=%cd%
 
-ECHO Initializing git submodule
-ECHO =============================
-git submodule init
-git submodule update
-
 ECHO Initializing vcpkg
 ECHO =============================
 cmd /c "cd lib/vcpkg && bootstrap-vcpkg.bat -disableMetrics"
